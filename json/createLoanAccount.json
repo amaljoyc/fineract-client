@@ -1,0 +1,36 @@
+{
+  "clientId": "1",
+  "productId": 1,
+  "disbursementData": [],
+  "principal": 10000000,
+  "submittedOnDate": "4 March 2021",
+  "expectedDisbursementDate": "4 March 2021",
+  "loanTermEndDate": "15 August 2021",
+  "repaymentsStartingFromDate": "31 March 2021",
+  "linusRepaymentFrequencyType": "MONTHLY",
+  "interestRatePerPeriod": 10,
+  "amortizationType": 0,
+  "isEqualAmortization": false,
+  "isBulletLoan": true,
+  "interestType": 0,
+  "interestCalculationPeriodType": 0,
+  "allowPartialPeriodInterestCalcualtion": false,
+  "transactionProcessingStrategyId": 1,
+  "rates": [],
+  "charges": [
+    {
+      "id": null,
+      "chargeId": 1,
+      "amount": 100000
+    },
+    {
+      "id": null,
+      "chargeId": 2,
+      "amount": 100000,
+      "dueDate": "20 June 2021"
+    }
+  ],
+  "locale": "en",
+  "dateFormat": "dd MMMM yyyy",
+  "loanType": "individual"
+}
