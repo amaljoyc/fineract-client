@@ -26,7 +26,7 @@ type RepayLoanRequest struct {
 const loanUrl = fineractclient.FineractApi + "/loans/"
 
 func CreateLoan() int64  {
-	data := util.Read("createLoanAccount.json")
+	data := util.Read("createLoan.json")
 	var response CreateLoanResponse
 	responseJson := util.Request(loanUrl, data)
 	err := json.Unmarshal(responseJson, &response)
@@ -39,13 +39,13 @@ func CreateLoan() int64  {
 }
 
 func ApproveLoan(loanId int64)  {
-	data := util.Read("approveLoanAccount.json")
+	data := util.Read("approveLoan.json")
 	util.Request(loanUrl + strconv.FormatInt(loanId, 10) + "?command=approve", data)
 	fmt.Println("Approved loan with id", loanId)
 }
 
 func DisburseLoan(loanId int64)  {
-	data := util.Read("disburseLoanAccount.json")
+	data := util.Read("disburseLoan.json")
 	util.Request(loanUrl + strconv.FormatInt(loanId, 10) + "?command=disburse", data)
 	fmt.Println("Disbursed loan with id", loanId)
 }
