@@ -14,10 +14,10 @@ type CreateLoanResponse struct {
 
 type RepayLoanRequest struct {
 	PaymentTypeId         int    `json:"paymentTypeId"`
-	TransactionAmount     int64    `json:"transactionAmount,omitempty"`
-	PrincipalPortionGiven int64    `json:"principalPortionGiven,omitempty"`
-	InterestPortionGiven  int64    `json:"interestPortionGiven,omitempty"`
-	FeePortionGiven       int64    `json:"feePortionGiven,omitempty"`
+	TransactionAmount     float64    `json:"transactionAmount,omitempty"`
+	PrincipalPortionGiven float64    `json:"principalPortionGiven,omitempty"`
+	InterestPortionGiven  float64    `json:"interestPortionGiven,omitempty"`
+	FeePortionGiven       float64    `json:"feePortionGiven,omitempty"`
 	TransactionDate       string `json:"transactionDate"`
 	Locale                string `json:"locale"`
 	DateFormat            string `json:"dateFormat"`
@@ -50,7 +50,7 @@ func DisburseLoan(loanId int64)  {
 	fmt.Println("Disbursed loan with id", loanId)
 }
 
-func RepayLoan(loanId int64, principal int64, interest int64, fee int64, amount int64, date string)  {
+func RepayLoan(loanId int64, principal float64, interest float64, fee float64, amount float64, date string)  {
 	data := util.Read("repayLoan.json")
 	var repayLoanRequest RepayLoanRequest
 	err := json.Unmarshal(data, &repayLoanRequest)

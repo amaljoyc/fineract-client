@@ -16,10 +16,10 @@ func main() {
 	action := os.Args[1]
 	repay := flag.NewFlagSet("repay", flag.ExitOnError)
 	loanId := repay.Int64("id", 0, "loanId of a loanAccount")
-	principal := repay.Int64("p", 0, "value of principalPortionGiven")
-	interest := repay.Int64("i", 0, "value of interestPortionGiven")
-	fee := repay.Int64("f", 0, "value of feePortionGiven")
-	amount := repay.Int64("a", 0, "value of transactionAmount")
+	principal := repay.Float64("p", 0, "value of principalPortionGiven")
+	interest := repay.Float64("i", 0, "value of interestPortionGiven")
+	fee := repay.Float64("f", 0, "value of feePortionGiven")
+	amount := repay.Float64("a", 0, "value of transactionAmount")
 	date := repay.String("d", "", "value of transactionDate")
 
 	switch action {
