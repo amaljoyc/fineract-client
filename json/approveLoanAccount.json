@@ -1,0 +1,8 @@
+{
+  "approvedOnDate": "04 March 2021",
+  "approvedLoanAmount": 10000000,
+  "expectedDisbursementDate": "04 March 2021",
+  "disbursementData": [],
+  "locale": "en",
+  "dateFormat": "dd MMMM yyyy"
+}

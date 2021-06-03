@@ -1,0 +1,7 @@
+{
+  "paymentTypeId": 1,
+  "transactionAmount": 10000000,
+  "actualDisbursementDate": "04 March 2021",
+  "locale": "en",
+  "dateFormat": "dd MMMM yyyy"
+}
