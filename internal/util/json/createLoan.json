@@ -1,11 +1,11 @@
 {
   "clientId": "1",
-  "productId": 1,
+  "productId": 2,
   "disbursementData": [],
   "principal": 10000000,
   "submittedOnDate": "4 March 2021",
   "expectedDisbursementDate": "4 March 2021",
-  "loanTermEndDate": "15 August 2021",
+  "loanTermEndDate": "3 June 2021",
   "repaymentsStartingFromDate": "31 March 2021",
   "linusRepaymentFrequencyType": "MONTHLY",
   "interestRatePerPeriod": 10,
@@ -15,7 +15,7 @@
   "interestType": 0,
   "interestCalculationPeriodType": 0,
   "allowPartialPeriodInterestCalcualtion": false,
-  "transactionProcessingStrategyId": 1,
+  "transactionProcessingStrategyId": 8,
   "rates": [],
   "charges": [
     {
@@ -27,7 +27,7 @@
       "id": null,
       "chargeId": 2,
       "amount": 100000,
-      "dueDate": "20 June 2021"
+      "dueDate": "3 June 2021"
     }
   ],
   "locale": "en",
