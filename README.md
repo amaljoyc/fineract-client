@@ -1,2 +1,23 @@
 ## fineract-client
-inorder to perform simple and frequent requests during dev and test.
+simple fineract client for easy dev & test.
+
+### install binaries
+```
+# creates the binaries in this project under your $GOPATH
+./install.sh
+```
+
+### loan product commands
+@TODO
+
+### loan account commands
+```
+# creates a new loan account
+loanaccount create
+
+# creates, approves and disburses a new loan account
+loanaccount open
+
+# makes a loan repayment
+loanaccount repay -id=<loanId> -p=<principal> -i=<interest> -f=<fee> -a=<amount>
+```
