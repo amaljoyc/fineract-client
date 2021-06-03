@@ -19,5 +19,7 @@ loanaccount create
 loanaccount open
 
 # makes a loan repayment
-loanaccount repay -id=<loanId> -p=<principal> -i=<interest> -f=<fee> -a=<amount>
+loanaccount repay -id=<loanId> -p=<principal> -i=<interest> -f=<fee> -a=<amount> -d=<date>
+# eg.
+loanaccount repay -id=64 -i=75000 -d="31 March 2021"
 ```

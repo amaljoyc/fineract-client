@@ -16,6 +16,11 @@ func main() {
 	action := os.Args[1]
 	repay := flag.NewFlagSet("repay", flag.ExitOnError)
 	loanId := repay.Int64("id", 0, "loanId of a loanAccount")
+	principal := repay.Int64("p", 0, "value of principalPortionGiven")
+	interest := repay.Int64("i", 0, "value of interestPortionGiven")
+	fee := repay.Int64("f", 0, "value of feePortionGiven")
+	amount := repay.Int64("a", 0, "value of transactionAmount")
+	date := repay.String("d", "", "value of transactionDate")
 
 	switch action {
 	case "create":
@@ -27,7 +32,7 @@ func main() {
 	case "repay":
 		repay.Parse(os.Args[2:])
 		validateLoanId(*loanId)
-		fineract.RepayLoan(*loanId)
+		fineract.RepayLoan(*loanId, *principal, *interest, *fee, *amount, *date)
 	default:
 		fmt.Println("got an unexpected action!")
 		os.Exit(1)
@@ -36,7 +41,7 @@ func main() {
 
 func validateLoanId(loanId int64)  {
 	if loanId == 0 {
-		fmt.Println("repay action expects a loanId")
+		fmt.Println("expected an 'id' flag for the loanId")
 		os.Exit(1)
 	}
 }

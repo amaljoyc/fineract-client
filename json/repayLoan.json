@@ -1,0 +1,10 @@
+{
+  "paymentTypeId": 1,
+  "transactionAmount": null,
+  "principalPortionGiven": null,
+  "interestPortionGiven": null,
+  "feePortionGiven": null,
+  "transactionDate": "31 March 2021",
+  "locale": "en",
+  "dateFormat": "dd MMMM yyyy"
+}
