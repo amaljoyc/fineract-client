@@ -1,0 +1,14 @@
+{
+  "fullname": "Project Name",
+  "fullAddress": "example of a full address here",
+  "investmentType": "ACQUISITION",
+  "loanType": "WHOLE",
+  "dealCaptain": "deal captain name",
+  "dealTeam": "deal team name",
+  "officeId": 1,
+  "locale": "en",
+  "active": true,
+  "dateFormat": "dd MMMM yyyy",
+  "activationDate": "01 March 2021",
+  "submittedOnDate": "01 March 2021"
+}
