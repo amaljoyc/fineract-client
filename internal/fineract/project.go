@@ -15,7 +15,7 @@ type ProjectResponse struct {
 const projectUrl = fineractclient.FineractApi + "/clients"
 
 func CreateProject(projectName string)  {
-	data := util.Read("createProject.json")
+	data := util.Read("project.json")
 	var dataMap map[string]interface{}
 	json.Unmarshal(data, &dataMap)
 	if projectName != "" {
@@ -34,7 +34,7 @@ func CreateProject(projectName string)  {
 }
 
 func UpdateProject(projectId int64)  {
-	data := util.Read("createProject.json")
+	data := util.Read("project.json")
 	var dataMap map[string]interface{}
 	json.Unmarshal(data, &dataMap)
 	delete(dataMap, "officeId")
