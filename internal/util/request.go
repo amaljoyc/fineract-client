@@ -8,10 +8,10 @@ import (
 	"net/http"
 )
 
-func Request(url string, body []byte) []byte {
+func Request(method string, url string, body []byte) []byte {
 	fmt.Println("POST URL:", url)
 
-	request, err := http.NewRequest("POST", url, bytes.NewBuffer(body))
+	request, err := http.NewRequest(method, url, bytes.NewBuffer(body))
 	if err != nil {
 		panic(err)
 	}

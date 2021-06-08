@@ -28,7 +28,7 @@ const loanUrl = fineractclient.FineractApi + "/loans/"
 func CreateLoan() int64  {
 	data := util.Read("createLoan.json")
 	var response CreateLoanResponse
-	responseJson := util.Request(loanUrl, data)
+	responseJson := util.Request("POST", loanUrl, data)
 	err := json.Unmarshal(responseJson, &response)
 	if err != nil {
 		 panic(err)
@@ -40,13 +40,13 @@ func CreateLoan() int64  {
 
 func ApproveLoan(loanId int64)  {
 	data := util.Read("approveLoan.json")
-	util.Request(loanUrl + strconv.FormatInt(loanId, 10) + "?command=approve", data)
+	util.Request("POST",loanUrl + strconv.FormatInt(loanId, 10) + "?command=approve", data)
 	fmt.Println("Approved loan with id", loanId)
 }
 
 func DisburseLoan(loanId int64)  {
 	data := util.Read("disburseLoan.json")
-	util.Request(loanUrl + strconv.FormatInt(loanId, 10) + "?command=disburse", data)
+	util.Request("POST",loanUrl + strconv.FormatInt(loanId, 10) + "?command=disburse", data)
 	fmt.Println("Disbursed loan with id", loanId)
 }
 
@@ -75,6 +75,6 @@ func RepayLoan(loanId int64, principal float64, interest float64, fee float64, a
 	}
 
 	body, _ := json.Marshal(repayLoanRequest)
-	util.Request(loanUrl + strconv.FormatInt(loanId, 10) + "/transactions?command=repayment", body)
+	util.Request("POST",loanUrl + strconv.FormatInt(loanId, 10) + "/transactions?command=repayment", body)
 	fmt.Println("Repaid loan with id", loanId)
 }
