@@ -23,3 +23,12 @@ loanaccount repay -id=<loanId> -p=<principal> -i=<interest> -f=<fee> -a=<amount>
 # eg.
 loanaccount repay -id=64 -i=75000 -d="31 March 2021"
 ```
+
+### project commands
+```
+# creates a new project
+project create -n="New Project Name"
+
+# updates the project with id
+project update -id=123
+```
