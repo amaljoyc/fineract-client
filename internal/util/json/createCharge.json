@@ -1,0 +1,13 @@
+{
+  "chargeAppliesTo": 1,
+  "name": "LinusStyleCharge for %",
+  "currencyCode": "EUR",
+  "chargeTimeType": 2,
+  "chargeCalculationType": 2,
+  "chargePaymentMode": 0,
+  "linusStyleCharge": true,
+  "amount": "1",
+  "active": true,
+  "locale": "en",
+  "monthDayFormat": "dd MMM"
+}

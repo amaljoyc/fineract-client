@@ -25,8 +25,8 @@
     },
     {
       "id": null,
-      "chargeId": 2,
-      "amount": 100000,
+      "chargeId": 5,
+      "amount": 2.5,
       "dueDate": "3 June 2021"
     }
   ],

@@ -32,3 +32,12 @@ project create -n="New Project Name"
 # updates the project with id
 project update -id=123
 ```
+
+### charge product commands
+```
+# creates a new FLAT charge/fee product
+chargeproduct flat -a="5000"
+
+# creates a new PERCENT charge/fee product
+chargeproduct percent -a="1"
+```
