@@ -26,6 +26,21 @@
     {
       "id": null,
       "chargeId": 5,
+      "amount": 1,
+      "dueDate": "30 April 2021",
+      "allowRecalculation": true
+    },
+    {
+      "id": null,
+      "chargeId": 5,
+      "amount": 1.5,
+      "startDate": "01 May 2021",
+      "dueDate": "20 May 2021",
+      "allowRecalculation": true
+    },
+    {
+      "id": null,
+      "chargeId": 5,
       "amount": 2.5,
       "dueDate": "3 June 2021"
     }
