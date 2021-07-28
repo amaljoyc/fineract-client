@@ -1,0 +1,2 @@
+- this directory contains couple of sample json requests for a `Loan Product` (base template) that matches to Linus Loans usecases.
+- for other sample request json (like for `Loan Account` or `Charge/Fee`), refer to the various files from https://github.com/linus-capital/fineract-client/tree/master/internal/util/json

@@ -1,0 +1,761 @@
+{
+  "id": 2,
+  "name": "Product 2",
+  "shortName": "P2",
+  "includeInBorrowerCycle": false,
+  "useBorrowerCycle": false,
+  "status": "loanProduct.active",
+  "currency": {
+    "code": "EUR",
+    "name": "Euro",
+    "decimalPlaces": 2,
+    "inMultiplesOf": 1,
+    "displaySymbol": "€",
+    "nameCode": "currency.EUR",
+    "displayLabel": "Euro (€)"
+  },
+  "principal": 10000000,
+  "minPrincipal": 1,
+  "maxPrincipal": 100000000,
+  "numberOfRepayments": 1,
+  "minNumberOfRepayments": 1,
+  "maxNumberOfRepayments": 100,
+  "repaymentEvery": 1,
+  "repaymentFrequencyType": {
+    "id": 2,
+    "code": "repaymentFrequency.periodFrequencyType.months",
+    "value": "Months"
+  },
+  "interestRatePerPeriod": 10,
+  "minInterestRatePerPeriod": 1,
+  "maxInterestRatePerPeriod": 100,
+  "interestRateFrequencyType": {
+    "id": 3,
+    "code": "interestRateFrequency.periodFrequencyType.years",
+    "value": "Per year"
+  },
+  "annualInterestRate": 10,
+  "isLinkedToFloatingInterestRates": false,
+  "isFloatingInterestRateCalculationAllowed": false,
+  "allowVariableInstallments": true,
+  "minimumGap": 0,
+  "maximumGap": 1000,
+  "amortizationType": {
+    "id": 1,
+    "code": "amortizationType.equal.installments",
+    "value": "Equal installments"
+  },
+  "interestType": {
+    "id": 0,
+    "code": "interestType.declining.balance",
+    "value": "Declining Balance"
+  },
+  "interestCalculationPeriodType": {
+    "id": 0,
+    "code": "interestCalculationPeriodType.daily",
+    "value": "Daily"
+  },
+  "allowPartialPeriodInterestCalcualtion": false,
+  "transactionProcessingStrategyId": 8,
+  "transactionProcessingStrategyName": "Linus Repayment Strategy",
+  "daysInMonthType": {
+    "id": 1,
+    "code": "DaysInMonthType.actual",
+    "value": "Actual"
+  },
+  "daysInYearType": {
+    "id": 360,
+    "code": "DaysInYearType.days360",
+    "value": "360 Days"
+  },
+  "isInterestRecalculationEnabled": true,
+  "interestRecalculationData": {
+    "id": 2,
+    "productId": 2,
+    "interestRecalculationCompoundingType": {
+      "id": 0,
+      "code": "interestRecalculationCompoundingMethod.none",
+      "value": "None"
+    },
+    "rescheduleStrategyType": {
+      "id": 3,
+      "code": "loanRescheduleStrategyMethod.reduce.emi.amount",
+      "value": "Reduce EMI amount"
+    },
+    "recalculationRestFrequencyType": {
+      "id": 2,
+      "code": "interestRecalculationFrequencyType.daily",
+      "value": "Daily"
+    },
+    "recalculationRestFrequencyInterval": 1,
+    "isArrearsBasedOnOriginalSchedule": false,
+    "isCompoundingToBePostedAsTransaction": false,
+    "preClosureInterestCalculationStrategy": {
+      "id": 1,
+      "code": "loanPreClosureInterestCalculationStrategy.tillPreClosureDate",
+      "value": "Till preclose Date"
+    },
+    "allowCompoundingOnEod": false
+  },
+  "canDefineInstallmentAmount": false,
+  "installmentAmountInMultiplesOf": 1,
+  "charges": [
+    {
+      "id": 1,
+      "name": "In Fee",
+      "active": true,
+      "penalty": false,
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "decimalPlaces": 2,
+        "displaySymbol": "€",
+        "nameCode": "currency.EUR",
+        "displayLabel": "Euro (€)"
+      },
+      "amount": 100000,
+      "chargeTimeType": {
+        "id": 1,
+        "code": "chargeTimeType.disbursement",
+        "value": "Disbursement"
+      },
+      "chargeAppliesTo": {
+        "id": 1,
+        "code": "chargeAppliesTo.loan",
+        "value": "Loan"
+      },
+      "chargeCalculationType": {
+        "id": 1,
+        "code": "chargeCalculationType.flat",
+        "value": "Flat"
+      },
+      "chargePaymentMode": {
+        "id": 0,
+        "code": "chargepaymentmode.regular",
+        "value": "Regular"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Fee on Date",
+      "active": true,
+      "penalty": false,
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "decimalPlaces": 2,
+        "displaySymbol": "€",
+        "nameCode": "currency.EUR",
+        "displayLabel": "Euro (€)"
+      },
+      "amount": 100000,
+      "chargeTimeType": {
+        "id": 2,
+        "code": "chargeTimeType.specifiedDueDate",
+        "value": "Specified due date"
+      },
+      "chargeAppliesTo": {
+        "id": 1,
+        "code": "chargeAppliesTo.loan",
+        "value": "Loan"
+      },
+      "chargeCalculationType": {
+        "id": 1,
+        "code": "chargeCalculationType.flat",
+        "value": "Flat"
+      },
+      "chargePaymentMode": {
+        "id": 0,
+        "code": "chargepaymentmode.regular",
+        "value": "Regular"
+      }
+    }
+  ],
+  "principalVariationsForBorrowerCycle": [],
+  "interestRateVariationsForBorrowerCycle": [],
+  "numberOfRepaymentVariationsForBorrowerCycle": [],
+  "accountingRule": {
+    "id": 1,
+    "code": "accountingRuleType.none",
+    "value": "NONE"
+  },
+  "canUseForTopup": false,
+  "isRatesEnabled": false,
+  "rates": [],
+  "paymentTypeOptions": [
+    {
+      "id": 1,
+      "name": "Money Transfer",
+      "description": "Money Transfer",
+      "isCashPayment": false,
+      "position": 1
+    }
+  ],
+  "currencyOptions": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "decimalPlaces": 2,
+      "displaySymbol": "€",
+      "nameCode": "currency.EUR",
+      "displayLabel": "Euro (€)"
+    },
+    {
+      "code": "USD",
+      "name": "US Dollar",
+      "decimalPlaces": 2,
+      "displaySymbol": "$",
+      "nameCode": "currency.USD",
+      "displayLabel": "US Dollar ($)"
+    }
+  ],
+  "repaymentFrequencyTypeOptions": [
+    {
+      "id": 0,
+      "code": "repaymentFrequency.periodFrequencyType.days",
+      "value": "Days"
+    },
+    {
+      "id": 1,
+      "code": "repaymentFrequency.periodFrequencyType.weeks",
+      "value": "Weeks"
+    },
+    {
+      "id": 2,
+      "code": "repaymentFrequency.periodFrequencyType.months",
+      "value": "Months"
+    }
+  ],
+  "interestRateFrequencyTypeOptions": [
+    {
+      "id": 2,
+      "code": "interestRateFrequency.periodFrequencyType.months",
+      "value": "Per month"
+    },
+    {
+      "id": 3,
+      "code": "interestRateFrequency.periodFrequencyType.years",
+      "value": "Per year"
+    },
+    {
+      "id": 4,
+      "code": "interestRateFrequency.periodFrequencyType.whole_term",
+      "value": "Whole term"
+    }
+  ],
+  "amortizationTypeOptions": [
+    {
+      "id": 1,
+      "code": "amortizationType.equal.installments",
+      "value": "Equal installments"
+    },
+    {
+      "id": 0,
+      "code": "amortizationType.equal.principal",
+      "value": "Equal principal payments"
+    }
+  ],
+  "interestTypeOptions": [
+    {
+      "id": 1,
+      "code": "interestType.flat",
+      "value": "Flat"
+    },
+    {
+      "id": 0,
+      "code": "interestType.declining.balance",
+      "value": "Declining Balance"
+    }
+  ],
+  "interestCalculationPeriodTypeOptions": [
+    {
+      "id": 0,
+      "code": "interestCalculationPeriodType.daily",
+      "value": "Daily"
+    },
+    {
+      "id": 1,
+      "code": "interestCalculationPeriodType.same.as.repayment.period",
+      "value": "Same as repayment period"
+    }
+  ],
+  "transactionProcessingStrategyOptions": [
+    {
+      "id": 8,
+      "code": "linus-repayment-strategy",
+      "name": "Linus Repayment Strategy"
+    },
+    {
+      "id": 1,
+      "code": "mifos-standard-strategy",
+      "name": "Penalties, Fees, Interest, Principal order"
+    },
+    {
+      "id": 4,
+      "code": "rbi-india-strategy",
+      "name": "Overdue/Due Fee/Int,Principal"
+    },
+    {
+      "id": 5,
+      "code": "principal-interest-penalties-fees-order-strategy",
+      "name": "Principal, Interest, Penalties, Fees Order"
+    },
+    {
+      "id": 6,
+      "code": "interest-principal-penalties-fees-order-strategy",
+      "name": "Interest, Principal, Penalties, Fees Order"
+    },
+    {
+      "id": 7,
+      "code": "early-repayment-strategy",
+      "name": "Early Repayment Strategy"
+    },
+    {
+      "id": 2,
+      "code": "heavensfamily-strategy",
+      "name": "HeavensFamily Unique"
+    },
+    {
+      "id": 3,
+      "code": "creocore-strategy",
+      "name": "Creocore Unique"
+    }
+  ],
+  "chargeOptions": [
+    {
+      "id": 9,
+      "name": "Commitment Interest",
+      "active": true,
+      "penalty": false,
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "decimalPlaces": 2,
+        "displaySymbol": "€",
+        "nameCode": "currency.EUR",
+        "displayLabel": "Euro (€)"
+      },
+      "amount": 1,
+      "chargeTimeType": {
+        "id": 1,
+        "code": "chargeTimeType.disbursement",
+        "value": "Disbursement"
+      },
+      "chargeAppliesTo": {
+        "id": 1,
+        "code": "chargeAppliesTo.loan",
+        "value": "Loan"
+      },
+      "chargeCalculationType": {
+        "id": 2,
+        "code": "chargeCalculationType.percent.of.amount",
+        "value": "% Amount"
+      },
+      "chargePaymentMode": {
+        "id": 0,
+        "code": "chargepaymentmode.regular",
+        "value": "Regular"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Fee on Date",
+      "active": true,
+      "penalty": false,
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "decimalPlaces": 2,
+        "displaySymbol": "€",
+        "nameCode": "currency.EUR",
+        "displayLabel": "Euro (€)"
+      },
+      "amount": 100000,
+      "chargeTimeType": {
+        "id": 2,
+        "code": "chargeTimeType.specifiedDueDate",
+        "value": "Specified due date"
+      },
+      "chargeAppliesTo": {
+        "id": 1,
+        "code": "chargeAppliesTo.loan",
+        "value": "Loan"
+      },
+      "chargeCalculationType": {
+        "id": 1,
+        "code": "chargeCalculationType.flat",
+        "value": "Flat"
+      },
+      "chargePaymentMode": {
+        "id": 0,
+        "code": "chargepaymentmode.regular",
+        "value": "Regular"
+      }
+    },
+    {
+      "id": 4,
+      "name": "FlatFee on DueDate",
+      "active": true,
+      "penalty": false,
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "decimalPlaces": 2,
+        "displaySymbol": "€",
+        "nameCode": "currency.EUR",
+        "displayLabel": "Euro (€)"
+      },
+      "amount": 5000,
+      "chargeTimeType": {
+        "id": 2,
+        "code": "chargeTimeType.specifiedDueDate",
+        "value": "Specified due date"
+      },
+      "chargeAppliesTo": {
+        "id": 1,
+        "code": "chargeAppliesTo.loan",
+        "value": "Loan"
+      },
+      "chargeCalculationType": {
+        "id": 1,
+        "code": "chargeCalculationType.flat",
+        "value": "Flat"
+      },
+      "chargePaymentMode": {
+        "id": 0,
+        "code": "chargepaymentmode.regular",
+        "value": "Regular"
+      }
+    },
+    {
+      "id": 1,
+      "name": "In Fee",
+      "active": true,
+      "penalty": false,
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "decimalPlaces": 2,
+        "displaySymbol": "€",
+        "nameCode": "currency.EUR",
+        "displayLabel": "Euro (€)"
+      },
+      "amount": 100000,
+      "chargeTimeType": {
+        "id": 1,
+        "code": "chargeTimeType.disbursement",
+        "value": "Disbursement"
+      },
+      "chargeAppliesTo": {
+        "id": 1,
+        "code": "chargeAppliesTo.loan",
+        "value": "Loan"
+      },
+      "chargeCalculationType": {
+        "id": 1,
+        "code": "chargeCalculationType.flat",
+        "value": "Flat"
+      },
+      "chargePaymentMode": {
+        "id": 0,
+        "code": "chargepaymentmode.regular",
+        "value": "Regular"
+      }
+    },
+    {
+      "id": 3,
+      "name": "OutFee",
+      "active": true,
+      "penalty": false,
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "decimalPlaces": 2,
+        "displaySymbol": "€",
+        "nameCode": "currency.EUR",
+        "displayLabel": "Euro (€)"
+      },
+      "amount": 1,
+      "chargeTimeType": {
+        "id": 2,
+        "code": "chargeTimeType.specifiedDueDate",
+        "value": "Specified due date"
+      },
+      "chargeAppliesTo": {
+        "id": 1,
+        "code": "chargeAppliesTo.loan",
+        "value": "Loan"
+      },
+      "chargeCalculationType": {
+        "id": 2,
+        "code": "chargeCalculationType.percent.of.amount",
+        "value": "% Amount"
+      },
+      "chargePaymentMode": {
+        "id": 0,
+        "code": "chargepaymentmode.regular",
+        "value": "Regular"
+      }
+    },
+    {
+      "id": 5,
+      "name": "PercentFee on DueDate",
+      "active": true,
+      "penalty": false,
+      "currency": {
+        "code": "EUR",
+        "name": "Euro",
+        "decimalPlaces": 2,
+        "displaySymbol": "€",
+        "nameCode": "currency.EUR",
+        "displayLabel": "Euro (€)"
+      },
+      "amount": 1,
+      "chargeTimeType": {
+        "id": 2,
+        "code": "chargeTimeType.specifiedDueDate",
+        "value": "Specified due date"
+      },
+      "chargeAppliesTo": {
+        "id": 1,
+        "code": "chargeAppliesTo.loan",
+        "value": "Loan"
+      },
+      "chargeCalculationType": {
+        "id": 2,
+        "code": "chargeCalculationType.percent.of.amount",
+        "value": "% Amount"
+      },
+      "chargePaymentMode": {
+        "id": 0,
+        "code": "chargepaymentmode.regular",
+        "value": "Regular"
+      }
+    }
+  ],
+  "accountingRuleOptions": [
+    {
+      "id": 1,
+      "code": "accountingRuleType.none",
+      "value": "NONE"
+    },
+    {
+      "id": 2,
+      "code": "accountingRuleType.cash",
+      "value": "CASH BASED"
+    },
+    {
+      "id": 3,
+      "code": "accountingRuleType.accrual.periodic",
+      "value": "ACCRUAL PERIODIC"
+    },
+    {
+      "id": 4,
+      "code": "accountingRuleType.accrual.upfront",
+      "value": "ACCRUAL UPFRONT"
+    }
+  ],
+  "accountingMappingOptions": {},
+  "valueConditionTypeOptions": [
+    {
+      "id": 2,
+      "code": "LoanProductValueConditionType.equal",
+      "value": "equals"
+    },
+    {
+      "id": 3,
+      "code": "LoanProductValueConditionType.greaterThan",
+      "value": "greater than"
+    }
+  ],
+  "daysInMonthTypeOptions": [
+    {
+      "id": 1,
+      "code": "DaysInMonthType.actual",
+      "value": "Actual"
+    },
+    {
+      "id": 30,
+      "code": "DaysInMonthType.days360",
+      "value": "30 Days"
+    }
+  ],
+  "daysInYearTypeOptions": [
+    {
+      "id": 1,
+      "code": "DaysInYearType.actual",
+      "value": "Actual"
+    },
+    {
+      "id": 360,
+      "code": "DaysInYearType.days360",
+      "value": "360 Days"
+    },
+    {
+      "id": 364,
+      "code": "DaysInYearType.days364",
+      "value": "364 Days"
+    },
+    {
+      "id": 365,
+      "code": "DaysInYearType.days365",
+      "value": "365 Days"
+    }
+  ],
+  "interestRecalculationCompoundingTypeOptions": [
+    {
+      "id": 0,
+      "code": "interestRecalculationCompoundingMethod.none",
+      "value": "None"
+    },
+    {
+      "id": 2,
+      "code": "interestRecalculationCompoundingMethod.fee",
+      "value": "Fee"
+    },
+    {
+      "id": 1,
+      "code": "interestRecalculationCompoundingMethod.interest",
+      "value": "Interest"
+    },
+    {
+      "id": 3,
+      "code": "interestRecalculationCompoundingMethod.interest.and.fee",
+      "value": "Fee and Interest"
+    }
+  ],
+  "interestRecalculationNthDayTypeOptions": [
+    {
+      "id": 1,
+      "code": "interestRecalculationCompounding.nthDayType.one",
+      "value": "first"
+    },
+    {
+      "id": 2,
+      "code": "interestRecalculationCompounding.nthDayType.two",
+      "value": "second"
+    },
+    {
+      "id": 3,
+      "code": "interestRecalculationCompounding.nthDayType.three",
+      "value": "third"
+    },
+    {
+      "id": 4,
+      "code": "interestRecalculationCompounding.nthDayType.four",
+      "value": "fourth"
+    },
+    {
+      "id": -1,
+      "code": "interestRecalculationCompounding.nthDayType.last",
+      "value": "last"
+    }
+  ],
+  "interestRecalculationDayOfWeekTypeOptions": [
+    {
+      "id": 7,
+      "code": "interestRecalculationCompounding.weekDayType.sunday",
+      "value": "SUNDAY"
+    },
+    {
+      "id": 1,
+      "code": "interestRecalculationCompounding.weekDayType.monday",
+      "value": "MONDAY"
+    },
+    {
+      "id": 2,
+      "code": "interestRecalculationCompounding.weekDayType.tuesday",
+      "value": "TUESDAY"
+    },
+    {
+      "id": 3,
+      "code": "interestRecalculationCompounding.weekDayType.wednesday",
+      "value": "WEDNESDAY"
+    },
+    {
+      "id": 4,
+      "code": "interestRecalculationCompounding.weekDayType.thursday",
+      "value": "THURSDAY"
+    },
+    {
+      "id": 5,
+      "code": "interestRecalculationCompounding.weekDayType.friday",
+      "value": "FRIDAY"
+    },
+    {
+      "id": 6,
+      "code": "interestRecalculationCompounding.weekDayType.saturday",
+      "value": "SATURDAY"
+    }
+  ],
+  "rescheduleStrategyTypeOptions": [
+    {
+      "id": 3,
+      "code": "loanRescheduleStrategyMethod.reduce.emi.amount",
+      "value": "Reduce EMI amount"
+    },
+    {
+      "id": 2,
+      "code": "loanRescheduleStrategyMethod.reduce.number.of.installments",
+      "value": "Reduce number of installments"
+    },
+    {
+      "id": 1,
+      "code": "loanRescheduleStrategyMethod.reschedule.next.repayments",
+      "value": "Reschedule next repayments"
+    }
+  ],
+  "preClosureInterestCalculationStrategyOptions": [
+    {
+      "id": 1,
+      "code": "loanPreClosureInterestCalculationStrategy.tillPreClosureDate",
+      "value": "Till preclose Date"
+    },
+    {
+      "id": 2,
+      "code": "loanPreClosureInterestCalculationStrategy.tillRestFrequencyDate",
+      "value": "Till rest Frequency Date"
+    }
+  ],
+  "interestRecalculationFrequencyTypeOptions": [
+    {
+      "id": 1,
+      "code": "interestRecalculationFrequencyType.same.as.repayment.period",
+      "value": "Same as repayment period"
+    },
+    {
+      "id": 2,
+      "code": "interestRecalculationFrequencyType.daily",
+      "value": "Daily"
+    },
+    {
+      "id": 3,
+      "code": "interestRecalculationFrequencyType.weekly",
+      "value": "Weekly"
+    },
+    {
+      "id": 4,
+      "code": "interestRecalculationFrequencyType.monthly",
+      "value": "Monthly"
+    }
+  ],
+  "floatingRateOptions": [],
+  "multiDisburseLoan": false,
+  "maxTrancheCount": 0,
+  "principalThresholdForLastInstallment": 0,
+  "holdGuaranteeFunds": false,
+  "accountMovesOutOfNPAOnlyOnArrearsCompletion": false,
+  "allowAttributeOverrides": {
+    "amortizationType": true,
+    "interestType": true,
+    "transactionProcessingStrategyId": true,
+    "interestCalculationPeriodType": true,
+    "inArrearsTolerance": true,
+    "repaymentEvery": true,
+    "graceOnPrincipalAndInterestPayment": true,
+    "graceOnArrearsAgeing": true
+  },
+  "syncExpectedWithDisbursementDate": false,
+  "isEqualAmortization": false,
+  "isBulletLoan": false
+}
