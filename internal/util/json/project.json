@@ -10,5 +10,8 @@
   "active": true,
   "dateFormat": "dd MMMM yyyy",
   "activationDate": "01 March 2021",
-  "submittedOnDate": "01 March 2021"
+  "submittedOnDate": "01 March 2021",
+  "earliestEndDate": "30 June 2021",
+  "expectedEndDate": "15 July 2021",
+  "latestEndDate": "15 August 2021"
 }
